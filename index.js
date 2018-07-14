@@ -3,6 +3,8 @@ const truncate = require('cli-truncate')
 const wrap = require('wrap-ansi')
 const types = require('./types')
 
+const isWin = process.platform === 'win32'
+
 function getChoices (types) {
   const maxNameLength = types.reduce(
     (maxLength, type) =>
@@ -11,7 +13,7 @@ function getChoices (types) {
   )
 
   return types.map(choice => ({
-    name: `${choice.name.padEnd(maxNameLength, ' ')}  ${choice.emoji}  ${choice.description}`,
+    name: `${choice.name.padEnd(maxNameLength, ' ')}  ${isWin ? ':' : choice.emoji}  ${choice.description}`,
     value: choice.name
   }))
 }
