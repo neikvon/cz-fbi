@@ -1,0 +1,25 @@
+{
+  "name": "@peak-stone/cz-fbi",
+  "version": "1.0.0",
+  "description": "Commitizen adapter formatting commit messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neikvon/cz-fbi.git"
+  },
+  "keywords": [],
+  "author": "neikvon <neikvon@gmail.com> (https://github.com/neikvon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neikvon/cz-fbi/issues"
+  },
+  "homepage": "https://github.com/neikvon/cz-fbi#readme",
+  "dependencies": {
+    "cli-truncate": "^1.1.0",
+    "read-pkg-up": "^4.0.0",
+    "wrap-ansi": "^3.0.1"
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "emoji": "✨",
+    "description": "Introducing new features",
+    "name": "feat"
+  },
+  {
+    "emoji": "🐛",
+    "description": "Fixing a bug",
+    "name": "fix"
+  },
+  {
+    "emoji": "🔧",
+    "description": "Other changes that don't modify src or test files",
+    "name": "chore"
+  },
+  {
+    "emoji": "📝",
+    "description": "Writing docs",
+    "name": "docs"
+  },
+  {
+    "emoji": "🎨",
+    "description": "Improving structure / format of the code",
+    "name": "style"
+  },
+  {
+    "emoji": "🔨",
+    "description": "Refactoring code",
+    "name": "refactor"
+  },
+
+  {
+    "emoji": "⚡️",
+    "description": "Improving performance",
+    "name": "perf"
+  },
+  {
+    "emoji": "✅",
+    "description": "Adds or modifies tests",
+    "name": "test"
+  },
+  {
+    "emoji": "⏪",
+    "description": "Reverting changes",
+    "name": "revert"
+  },
+  {
+    "emoji": "🎉",
+    "description": "Initial commit",
+    "name": "init"
+  }
+]
