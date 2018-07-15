@@ -27,7 +27,8 @@ function createQuestions (res) {
       type: 'list',
       name: 'type',
       message: 'type of change      (required):',
-      choices: getChoices(emojiConfig.types || types)
+      choices: getChoices(emojiConfig.types || types),
+      pageSize: 10
     },
     {
       type: emojiConfig.scopes ? 'list' : 'input',
