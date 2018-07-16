@@ -18,3 +18,33 @@ bootstrap({
   }
 })
 ```
+
+## Docs
+- commit types: 
+  - feat: new features
+  - fix: bug fixes
+  - chore: maintain
+  - docs: documentation
+  - style: formatting, missing semi colons, …
+  - refactor
+  - perf: improving performance
+  - test: adds or modifies tests
+  - revert: reverting changes
+  - init: initial commit
+
+## Types customization
+
+```json
+{
+  "config": {
+    "cz-fbi": [
+      {
+        "emoji": "✨",
+        "description": "Introducing new features",
+        "name": "feat"
+      },
+      ...
+    ]
+  }
+}
+```
