@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/neikvon/cz-fbi/compare/v1.1.0...v1.1.1) (2018-07-16)
+
+
+### Bug Fixes
+
+* **types:** fix error when 'emoji' option is null ([1dfa940](https://github.com/neikvon/cz-fbi/commit/1dfa940))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/neikvon/cz-fbi/compare/v1.0.2...v1.1.0) (2018-07-15)
 
