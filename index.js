@@ -13,7 +13,7 @@ function getChoices (types) {
   )
 
   return types.map(choice => ({
-    name: `${choice.name.padEnd(maxNameLength, ' ')}  ${isWin ? ':' : choice.emoji}  ${choice.description}`,
+    name: `${choice.name.padEnd(maxNameLength, ' ')}  ${isWin ? ':' : choice.emoji || ':'}  ${choice.description}`,
     value: choice.name
   }))
 }
