@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/neikvon/cz-fbi/compare/v1.1.2...v1.1.3) (2018-09-29)
+
+
+### Bug Fixes
+
+* fix config issues ([86bdefd](https://github.com/neikvon/cz-fbi/commit/86bdefd))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/neikvon/cz-fbi/compare/v1.1.1...v1.1.2) (2018-09-29)
 
