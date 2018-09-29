@@ -82,7 +82,10 @@ function format (answers) {
 
   const issues = wrap(answers.issues, 100)
   if (issues) {
-    commit += '\n\n' + issues
+    const issuesIds = issues.match(/#\d+/g)
+    if (issuesIds) {
+      commit += '\n\n' + issuesIds.map(issue => `fixed ${issue}`).join(', ')
+    }
   }
 
   let breaking = answers.breaking.trim()
