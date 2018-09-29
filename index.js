@@ -1,11 +1,11 @@
 const readPkg = require('read-pkg-up')
 const truncate = require('cli-truncate')
 const wrap = require('wrap-ansi')
-const types = require('./types')
+const defaultTypes = require('./types')
 
 const isWin = process.platform === 'win32'
 
-function getChoices (types) {
+function getTypeChoices (types) {
   const maxNameLength = types.reduce(
     (maxLength, type) =>
       (type.name.length > maxLength ? type.name.length : maxLength),
@@ -19,23 +19,23 @@ function getChoices (types) {
 }
 
 function createQuestions (res) {
-  const config = res && res.pkg ? res.pkg.config || {} : {}
-  const emojiConfig = config['cz-fbi'] || {}
+  const configs = res && res.pkg && res.pkg['cz-fbi'] ? res.pkg['cz-fbi'] : {}
+  const types = configs.types || defaultTypes
 
   return [
     {
       type: 'list',
       name: 'type',
       message: 'type of change      (required):',
-      choices: getChoices(emojiConfig.types || types),
+      choices: getTypeChoices(types),
       pageSize: 10
     },
     {
-      type: emojiConfig.scopes ? 'list' : 'input',
+      type: configs.scopes ? 'list' : 'input',
       name: 'scope',
       message: 'affected scope      (optional):',
-      choices: emojiConfig.scopes &&
-        [{ name: '[none]', value: '' }].concat(emojiConfig.scopes)
+      choices: configs.scopes &&
+        [{ name: '[none]', value: '' }].concat(configs.scopes)
     },
     {
       type: 'input',

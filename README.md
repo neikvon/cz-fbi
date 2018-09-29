@@ -14,13 +14,14 @@ const { bootstrap } = require('@peak-stone/commitizen-promise/dist/cli/git-cz')
 bootstrap({
   cliPath: 'node_modules/@peak-stone/commitizen-promise',
   config: {
-    path: 'node_modules/@peak-stone/cz-fbi'
-  }
+    path: 'node_modules/@peak-stone/cz-fbi',
+  },
 })
 ```
 
 ## Docs
-- commit types: 
+
+- commit types:
   - feat: new features
   - fix: bug fixes
   - chore: maintain
@@ -34,17 +35,23 @@ bootstrap({
 
 ## Types customization
 
+> `package.json`
+
 ```json
 {
-  "config": {
-    "cz-fbi": [
+  "name": "",
+  "version": "",
+  ...
+  "cz-fbi": {
+    "types": [
       {
         "emoji": "✨",
         "description": "Introducing new features",
         "name": "feat"
       },
       ...
-    ]
+    ],
+    "scopes": ["page", "api", ...]
   }
 }
 ```
